@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotografías Estereoscópicas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Fotografías Estereoscópicas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery1">Galería 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery2">Galería 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery3">Galería 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="gallery1" class="gallery container mt-5">
+    <h2 class="text-center">Galería 1</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="img/yocercano.jpg" alt="Imagen 1" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+          <figcaption>Img. Profundidad Cercana</figcaption>
+        </center>
+      </figure>
+      <figure>
+        <img src="img/Yocentro.JPG" alt="Imagen 2" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+        <figcaption>Img. Profundidad Central</figcaption>
+        </center>
+      </figure>
+      <figure>
+        <img src="img/Yolejano.JPG" alt="Imagen 3" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+          <figcaption>Img. Profundidad Lejana</figcaption>
+        </center>
+      </figure>
+      <figure>
+        <img src="img/Yo.jpeg" alt="Imagen 4" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+          <figcaption>Imagen left/right</figcaption>
+        </center>
+      </figure>
+    </div>
+  </section>
+
+  <section id="gallery2" class="gallery container mt-5">
+    <h2 class="text-center">Galería 2</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="img/edificiocercano.JPG" alt="Imagen 5" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+          <figcaption>Img. Profundidad Cercana</figcaption>
+        </center>
+      </figure>
+      <figure>
+        <img src="img/edificiocentro.jpg" alt="Imagen 6" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+           <figcaption>Img. Profundidad Central</figcaption>
+        </center>
+      </figure>
+      <figure>
+        <img src="img/edificiolejano.JPG" alt="Imagen 7" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+           <figcaption>Img. Profundidad Lejana</figcaption>
+        </center>
+      </figure>
+      <figure>
+        <img src="img/edificio.jpeg" alt="Imagen 8" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+          <figcaption>Imagen left/right</figcaption>
+        </center>
+      </figure>
+    </div>
+  </section>
+
+  <section id="gallery3" class="gallery container mt-5 mb-5">
+    <h2 class="text-center">Galería 3</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="img/pasillocercano.JPG" alt="Imagen 9" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+          <figcaption>Img. Profundidad Cercana</figcaption>
+        </center>
+      </figure>
+      <figure>
+        <img src="img/pasillocentro.JPG" alt="Imagen 10" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+          <figcaption>Img. Profundidad Central</figcaption>
+        </center>
+      </figure>
+      <figure>
+        <img src="img/pasillolejano.JPG" alt="Imagen 11" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+          <figcaption>Img. Profundidad Lejana</figcaption>
+        </center>
+      </figure>
+      <figure>
+        <img src="img/pasillos.jpeg" alt="Imagen 12" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <br><br>
+        <center>
+          <figcaption>Imagen left/right</figcaption>
+        </center>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Modal para mostrar imágenes ampliadas -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" alt="Imagen Ampliada" id="modalImage" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p class="mb-1">&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+      <p>Desarrollado por Brayan Pérez San Juan</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
